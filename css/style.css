@@ -189,20 +189,34 @@ header nav{
     outline: 2px solid #1d1d1d;
 }
 
-@media screen and (min-width: 300px){
+/* Mobile */
+@media (max-width: 768px) {
+    #navbar li {
+      display: none;
+    }
+  
+    #navbar #logo {
+      display: flex;
+    }
+  
+    #bottom-header-links a {
+      display: none;
+    }
+  
+    #bottom-header-links .btn {
+      display: flex;
+    }
+  
+    #main-content {
+      padding: 2rem;
+      overflow: hidden;
+    }
+  
+    #main-content #subtitle {
+      font-size: 3rem;
+    }
+
     #product-image{
         width: 300px;
-    }
-}
-
-@media screen and (min-width: 768px){
-    #product-image{
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    #product-image{
-        width: 1000px;
     }
 }
